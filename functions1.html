@@ -30,12 +30,20 @@
     const para = document.createElement('p');
 
     // Add your code here
+    function chooseName() {
+      let randomName = names[Math.floor(Math.random() * names.length)];
+      para.textContent = randomName;
+      document.querySelector('section').appendChild(para);
+    }
+
 
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
 
     section.appendChild(para);
+
+    chooseName();
   </script>
 
 </html>
