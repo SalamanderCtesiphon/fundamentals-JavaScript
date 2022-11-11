@@ -31,11 +31,14 @@
 
     // Add your code here
     function chooseName() {
-      let randomName = names[Math.floor(Math.random() * names.length)];
+      let randomName = names[random()];
       para.textContent = randomName;
       document.querySelector('section').appendChild(para);
     }
 
+    function random() {
+      return Math.floor(Math.random() * names.length);
+    }
 
     // Don't edit the code below here!
 
